@@ -2,8 +2,8 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+.App-board {
+  position:absolute; top:20px; left:20px;
 }
 
 .App-header {
@@ -17,6 +17,62 @@
   color: white;
 }
 
+.powerled {
+  position:absolute; top:242px; left:64px;
+  width        : 15px;
+  height       : 7px;
+  background   : #e1fa04;
+  z-index      : 1000;
+  animation:blink 3s ease-in-out infinite alternate;
+}
+@keyframes blink {
+  0%,100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.led {
+  width        : 18px;
+  height       : 7px;
+  background   : #990000;
+  z-index      : 1000;
+}
+
+.led.one {
+  position:absolute; top:247px; left:113px;
+}
+
+.led.two {
+  position:absolute; top:262px; left:113px;
+}
+
+.led.three {
+  position:absolute; top:277px; left:113px;
+}
+
+.led.four {
+  position:absolute; top:292px; left:113px;
+}
+
 .App-link {
   color: #09d3ac;
+}
+
+.psw {
+  width        : 20px;
+  height       : 20px;
+  background   : #000000;
+  border-radius: 50%;
+  z-index      : 1000;
+}
+
+.psw.one {
+  position:absolute; top:257px; left:68px;
+}
+.psw.two {
+  position:absolute; top:290px; left:68px;
 }
